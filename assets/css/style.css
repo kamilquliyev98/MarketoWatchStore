@@ -9023,7 +9023,6 @@ footer .footer-contact .contact-lists li {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  text-transform: capitalize;
 }
 
 footer .footer-contact .contact-lists li:nth-child(1) span {
