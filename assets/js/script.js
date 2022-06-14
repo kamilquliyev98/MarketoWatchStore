@@ -266,88 +266,6 @@ $(document).ready(function () {
 
 
 
-    /* Add to cart JS */
-    $(".product-box .cart-wrap li .addtocart-btn").on("click", function () {
-        $.notify({
-            icon: "fa fa-check",
-            title: "Success!",
-            message: "Item Successfully added to your cart",
-        }, {
-            element: "body",
-            position: null,
-            type: "success",
-            allow_dismiss: true,
-            newest_on_top: false,
-            showProgressbar: true,
-            placement: {
-                from: "top",
-                align: "right",
-            },
-            offset: 20,
-            spacing: 10,
-            z_index: 1031,
-            delay: 3000,
-            animate: {
-                enter: "animated fadeInDown",
-                exit: "animated fadeOutUp",
-            },
-            icon_type: "class",
-            template: '<div data-notify="container" class="col-xs-11 col-sm-3 alert alert-{0}" role="alert">' +
-                '<button type="button" aria-hidden="true" class="btn-close" data-notify="dismiss"></button>' +
-                '<span data-notify="icon"></span> ' +
-                '<span data-notify="title">{1}</span> ' +
-                '<span data-notify="message">{2}</span>' +
-                '<div class="progress" data-notify="progressbar">' +
-                '<div class="progress-bar progress-bar-info progress-bar-{0}" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%;"></div>' +
-                "</div>" +
-                '<a href="{3}" target="{4}" data-notify="url"></a>' +
-                "</div>",
-        });
-    });
-
-
-
-    /* Add to wishlist JS */
-    $(".product-box a.wishlist").on("click", function () {
-        $.notify({
-            icon: "fa fa-check",
-            title: "Success!",
-            message: "Item Successfully added in wishlist",
-        }, {
-            element: "body",
-            position: null,
-            type: "info",
-            allow_dismiss: true,
-            newest_on_top: false,
-            showProgressbar: true,
-            placement: {
-                from: "top",
-                align: "right",
-            },
-            offset: 20,
-            spacing: 10,
-            z_index: 1031,
-            delay: 5000,
-            animate: {
-                enter: "animated fadeInDown",
-                exit: "animated fadeOutUp",
-            },
-            icon_type: "class",
-            template: '<div data-notify="container" class="col-xs-11 col-sm-3 alert alert-{0}" role="alert">' +
-                '<button type="button" aria-hidden="true" class="btn-close" data-notify="dismiss"></button>' +
-                '<span data-notify="icon"></span> ' +
-                '<span data-notify="title">{1}</span> ' +
-                '<span data-notify="message">{2}</span>' +
-                '<div class="progress" data-notify="progressbar">' +
-                '<div class="progress-bar progress-bar-info progress-bar-{0}" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%;"></div>' +
-                "</div>" +
-                '<a href="{3}" target="{4}" data-notify="url"></a>' +
-                "</div>",
-        });
-    });
-
-
-
     /* Category menu JS */
     $(".toggle-category").on("click", function () {
         $(".category-dropdown").addClass("open");
@@ -595,6 +513,87 @@ $(document).ready(function () {
         if (!isNaN(currentVal) && currentVal > 1) {
             $qty.val(currentVal - 1);
         }
+    });
+
+
+
+    /* Added to cart Toastr */
+    $(document).on("click", ".addtocart-btn", function (e) {
+        e.preventDefault();
+
+        toastr.options = {
+            "closeButton": false,
+            "debug": false,
+            "newestOnTop": true,
+            "progressBar": true,
+            "positionClass": "toast-top-right",
+            "preventDuplicates": false,
+            "onclick": null,
+            "showDuration": "300",
+            "hideDuration": "1000",
+            "timeOut": "5000",
+            "extendedTimeOut": "1000",
+            "showEasing": "swing",
+            "hideEasing": "linear",
+            "showMethod": "fadeIn",
+            "hideMethod": "fadeOut"
+        };
+
+        toastr.success("Item successfully added to your cart!");
+    });
+
+
+
+    /* Added to wishlist Toastr */
+    $(document).on("click", ".addtowishlist-btn", function (e) {
+        e.preventDefault();
+
+        toastr.options = {
+            "closeButton": false,
+            "debug": false,
+            "newestOnTop": true,
+            "progressBar": true,
+            "positionClass": "toast-top-right",
+            "preventDuplicates": false,
+            "onclick": null,
+            "showDuration": "300",
+            "hideDuration": "1000",
+            "timeOut": "5000",
+            "extendedTimeOut": "1000",
+            "showEasing": "swing",
+            "hideEasing": "linear",
+            "showMethod": "fadeIn",
+            "hideMethod": "fadeOut"
+        };
+
+        toastr.success("Item successfully added to your wishlist!");
+    });
+
+
+
+    /* Added to compare list Toastr */
+    $(document).on("click", ".addtocompare-btn", function (e) {
+        e.preventDefault();
+
+        toastr.options = {
+            "closeButton": false,
+            "debug": false,
+            "newestOnTop": true,
+            "progressBar": true,
+            "positionClass": "toast-top-right",
+            "preventDuplicates": false,
+            "onclick": null,
+            "showDuration": "300",
+            "hideDuration": "1000",
+            "timeOut": "5000",
+            "extendedTimeOut": "1000",
+            "showEasing": "swing",
+            "hideEasing": "linear",
+            "showMethod": "fadeIn",
+            "hideMethod": "fadeOut"
+        };
+
+        toastr.success("Item successfully added to your compare list!");
     });
 
 
