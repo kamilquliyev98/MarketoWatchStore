@@ -7515,33 +7515,24 @@ header .main-navbar .nav-menu > li.mega-menu.home-menu .megamenu-image-title {
 }
 
 .discount-image-details .discount-images {
+  position: relative;
   margin-right: 80px;
 }
 
 .discount-image-details .discount-images .theme-circle {
   width: 450px;
   height: 450px;
-  background: #752add;
-  background: radial-gradient(circle, #752add 0%, #572e93 100%);
+  background: #0163d2;
   border-radius: 50%;
+  opacity: 0.1;
 }
 
-.discount-image-details .discount-images .watch-images-1 {
+.discount-image-details .discount-images .deal-watch-image {
   position: absolute;
-  top: 18%;
-  left: 59px;
-  -webkit-transform: rotate(34deg);
-          transform: rotate(34deg);
-  width: 40%;
-}
-
-.discount-image-details .discount-images .watch-images-2 {
-  position: absolute;
-  top: 50px;
-  left: 430px;
-  width: 20%;
-  -webkit-transform: rotateY(180deg) rotate(45deg);
-          transform: rotateY(180deg) rotate(45deg);
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }
 
 .discount-image-details .discunt-details {
