@@ -1011,7 +1011,7 @@
     </section>
     <!-- Blog Section End -->
 
-    <!-- footer start -->
+    <!-- Footer start -->
     <footer class="footer-sm-space">
         <div class="main-footer">
             <div class="container">
@@ -1019,9 +1019,9 @@
                     <div class="col-xl-4 col-lg-4 col-md-6">
                         <div class="footer-contact">
                             <div class="brand-logo">
-                                <a href="index.html" class="footer-logo">
-                                    <img src="assets/images/logo/logo.png" class="img-fluid blur-up lazyload"
-                                        alt="logo">
+                                <a asp-controller="home" asp-action="index" class="footer-logo">
+                                    <img src="~/assets/images/logo/logo.png" class="img-fluid blur-up lazyload"
+                                         alt="logo">
                                 </a>
                             </div>
 
@@ -1034,8 +1034,8 @@
                                 </li>
                                 <li>
                                     <span>
-                                        <b>Address:</b><span class="font-light"> 1418 Riverwood Drive, Suite 3245
-                                            Cottonwood, CA 96052, United States</span>
+                                        <b>Address:</b>
+                                        <span class="font-light">1418 Riverwood Drive, Suite 3245 Cottonwood, CA 96052, United States</span>
                                     </span>
                                 </li>
                                 <li>
@@ -1056,8 +1056,12 @@
                                 <ul>
                                     <li>
                                         <a href="https://info.flagcounter.com/ydqm" target="_blank">
-                                            <img src="https://s01.flagcounter.com/count2/ydqm/bg_FFFFFF/txt_212529/border_0362D1/columns_3/maxflags_15/viewers_3/labels_1/pageviews_0/flags_0/percent_0/"
-                                                alt="Visitors">
+                                            <img src="https://s01.flagcounter.com/count2/ydqm/bg_FFFFFF/txt_000000/border_CCCCCC/columns_3/maxflags_12/viewers_3/labels_1/pageviews_0/flags_0/percent_0/" alt="Visitors">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://info.flagcounter.com/ydqm" target="_blank">
+                                            <img src="https://s11.flagcounter.com/mini/ydqm/bg_FFFFFF/txt_000000/border_CCCCCC/flags_1/" alt="Flag Counter" border="0">
                                         </a>
                                     </li>
                                 </ul>
@@ -1070,8 +1074,8 @@
                             <h3>Got Qustion ? Call Us 24/7</h3>
                             <div class="footer-number">
                                 <div class="footer-number-image">
-                                    <img src="assets/images/other/headphone.png" class="img-fluid blur-up lazyload"
-                                        alt="phone">
+                                    <img src="~/assets/images/other/headphone.png"
+                                         class="img-fluid blur-up lazyload" alt="phone">
                                 </div>
 
                                 <div class="footer-number-container">
@@ -1080,10 +1084,12 @@
                             </div>
 
                             <div class="footer-details">
-                                <p class="font-light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo ab
+                                <p class="font-light">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo ab
                                     dolorem nulla
                                     impedit saepe esse et? Ea, totam recusandae doloribus ipsa esse voluptate quis nisi?
-                                    Voluptate.</p>
+                                    Voluptate.
+                                </p>
                             </div>
                         </div>
                     </div>
@@ -1095,7 +1101,8 @@
                 <div class="row gy-3">
                     <div class="col-md-12">
                         <p class="mb-0 font-dark">
-                            &copy; 2021-<script>
+                            &copy; 2021-
+                            <script>
                                 document.write(new Date().getFullYear());
                             </script>, Marketo Watch Store
                         </p>
@@ -1104,7 +1111,7 @@
             </div>
         </div>
     </footer>
-    <!-- footer end -->
+    <!-- Footer end -->
 
     <!-- tap to top Section Start -->
     <div class="tap-to-top">
