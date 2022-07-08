@@ -6669,6 +6669,8 @@ header .main-navbar .nav-menu > li.mega-menu.home-menu .megamenu-image-title {
   position: relative;
   z-index: 1;
   line-height: 0.8;
+  color: #efefef;
+  border: none;
 }
 
 .product-box .cart-wrap button::after {
@@ -17527,5 +17529,11 @@ footer .footer-number .footer-number-image img {
   padding: 0;
   display: block;
   z-index: 0;
+}
+
+@media (min-width: 575px) {
+  .star-ratings {
+    margin: 0 auto;
+  }
 }
 /*# sourceMappingURL=style_dark.css.map */

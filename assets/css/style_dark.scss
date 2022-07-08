@@ -5930,6 +5930,8 @@ header {
             position: relative;
             z-index: 1;
             line-height: 0.8;
+            color: #efefef;
+            border: none;
 
             &::after {
                 content: "";
@@ -17266,5 +17268,11 @@ footer {
         padding: 0;
         display: block;
         z-index: 0;
+    }
+}
+
+@media (min-width: 575px) {
+    .star-ratings {
+        margin: 0 auto;
     }
 }
